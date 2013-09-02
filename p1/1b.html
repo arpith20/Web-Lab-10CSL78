@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Printing Numbers</title>
+</head>
+<body>
+	<h1>Printing numbers &amp; calculating their squares</h1>
+	<script type="text/javascript">
+		var n,i
+		n=prompt("Enter a number")
+		if(n>0)
+		{
+			c="Number|Square"
+			for(i=1;i<=n;i++)
+				c=(c+"\n"+i+"-->"+i*i)
+			alert(c)
+		}
+		else
+			alert("Enter a number greater than one")
+	</script>
+</body>
+</html>
