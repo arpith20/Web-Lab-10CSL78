@@ -1,0 +1,11 @@
+<?xml-stylesheet type="text/xsl" href="4b.xsl" ?>
+<student-information>
+	<student>
+		<usn>1PE10CS018</usn>
+		<name>Arpith</name>
+		<college>PESIT</college>
+		<branch>CSE</branch>
+		<year>2010</year>
+		<email>arpith@live.com</email>
+	</student>	
+</student-information>

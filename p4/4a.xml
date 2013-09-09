@@ -1,0 +1,31 @@
+<?xml-stylesheet type="text/css" href="4a.css" ?>
+<student-information>
+	<h1>Student Information</h1>
+	<h2>Student 1</h2>
+	<student>
+		<label>USN: <usn>1PE10CS018</usn></label>
+		<label>Name: <name>Arpith</name></label>
+		<label>College: <college>PESIT, BSC</college></label>
+		<label>Branch: <branch>CSE</branch></label>
+		<label>Year: <year>2010</year></label>
+		<label>Email: <email>arpith@live.com</email></label>
+	</student>
+	<h2>Student 2</h2>
+	<student>
+		<label>USN: <usn>1PE10CS019</usn></label>
+		<label>Name: <name>abc1</name></label>
+		<label>College: <college>PESIT, BSC</college></label>
+		<label>Branch: <branch>CSE</branch></label>
+		<label>Year: <year>2010</year></label>
+		<label>Email: <email>abc1@live.com</email></label>
+	</student>
+	<h2>Student 3</h2>
+	<student>
+		<label>USN: <usn>1PE10CS020</usn></label>
+		<label>Name: <name>abc2</name></label>
+		<label>College: <college>PESIT, BSC</college></label>
+		<label>Branch: <branch>CSE</branch></label>
+		<label>Year: <year>2010</year></label>
+		<label>Email: <email>abc2@live.com</email></label>
+	</student>
+</student-information>
