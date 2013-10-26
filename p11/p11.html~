@@ -1,0 +1,17 @@
+<html>
+<body>
+	<h3>Insert Information</h3>
+	<form action="insert.php">
+		Name :  <input type="text" name="name"><br />
+		Address Line 1 : <input type="text" name="address_line_1"><br />
+		Address Line 2 : <input type="text" name="address_line_2"><br />
+		Email Address : <input type="text" name="email"><br />
+		<input type="submit" value="Insert"></p>
+	</form>
+	<h3>Search</h3>
+	<form action="search.php">
+		Name : <input type="text" name="name"><br />
+		<input type="submit" value="Search">
+	</form>
+</body>
+</html>

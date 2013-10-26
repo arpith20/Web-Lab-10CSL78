@@ -1,0 +1,17 @@
+<?php
+	$name=$_REQUEST["txtName"];
+	$con = mysql_connect("localhost","root","root") or die('Could not connect: ' . mysql_error());
+	mysql_select_db("college",$con);
+	if($result=mysql_query("select * from college where name like '%".$name."%'"))
+	{
+		while($row=mysql_fetch_row($result))
+		{
+			foreach($row as $col)
+			{
+				print $col."<br>";
+			}
+			print "<hr>";
+		}
+	}
+	mysql_close($con);
+?>
