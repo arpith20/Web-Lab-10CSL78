@@ -1,0 +1,5 @@
+create database college;
+use college;
+create table student(name varchar(20),age int(3));
+insert into student values("abhinav",21);
+select * from student;

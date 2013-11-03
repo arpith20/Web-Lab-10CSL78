@@ -1,0 +1,8 @@
+#!C:\xampp\perl\bin\perl.exe
+use CGI ':standard';
+print "Refresh: 1\n";
+print "Content-type: text/html \n\n";
+print start_html();
+($s,$m,$h)=localtime(time());
+print "<h1 align=\"center\"> $h:$m:$s </h1>";
+print end_html();

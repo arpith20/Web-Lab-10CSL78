@@ -1,9 +1,10 @@
 #!/usr/bin/perl
 use CGI qw(:standard);
+print "Refresh: 1\n";
 print header();
 print start_html();
 
-$cmd = param("cmd");
-print "<h1>The output of $cmd is:</h1>";
-print "<pre>".`$cmd`."</pre>";
+($s,$m,$h)=localtime(time());
+print "The time is: $h:$m:$s";
+
 print end_html();

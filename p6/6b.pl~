@@ -1,13 +1,11 @@
-#!/opt/lampp/bin/perl
-use CGI ':standard';
+#!c:/xampp/perl/bin/perl.exe
+use CGI qw(:standard);
 print header();
-print start_html();
-open(FILE,"<count.txt");
-$count=<FILE>;
+open(FILE,"<count.dat");
+$cnt=<FILE>;
 close(FILE);
-$count++;
-open(FILE,">count.txt");
-print FILE $count;
-close(FILE);
-print "<h1> Page Hits : $count </h1>";
-print end_html();
+$cnt++;
+open(FILE,">count.dat");
+print FILE $cnt;
+close (FILE);
+print "<h1>this page has been accessed $cnt times</h1>";

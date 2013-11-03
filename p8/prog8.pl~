@@ -1,0 +1,18 @@
+#!C:\xampp\perl\bin\perl.exe
+use CGI ':standard';
+use DBI;
+print header();
+print start_html();
+$name=param("txtname");
+$age=param("txtage");
+$con=DBI->connect("DBI:mysql:college","root","root");
+$stat1=$con->prepare("insert into student values(?,?)");
+$stat1->execute($name,$age);
+$stat2=$con->prepare("select * from student");
+$stat2->execute();
+print "<h3>Data in Table</h3>";
+while(@row=$stat2->fetchrow_array())
+{
+	print "@row <BR>";
+}
+print end_html();
